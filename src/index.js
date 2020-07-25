@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// IMPORTING BOOTSTRAP
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+// IMPORTING REACT ROUTER DOM
+import { BrowserRouter as Router } from 'react-router-dom';
+
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <Router>
     <App />
-  </React.StrictMode>,
+  </Router>,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
